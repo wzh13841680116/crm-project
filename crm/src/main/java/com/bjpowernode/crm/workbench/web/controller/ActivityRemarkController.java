@@ -44,7 +44,7 @@ public class ActivityRemarkController {
         }
         return returnObject;
     }
-    @RequestMapping("workbrnch/activity/deleteActivityRemarkById.do")
+    @RequestMapping("workbench/activity/deleteActivityRemarkById.do")
     public @ResponseBody Object deleteActivityRemarkById(String id){
         int i = activityRemarkService.deleteActivityRemarkById(id);
         ReturnObject returnObject = new ReturnObject();
