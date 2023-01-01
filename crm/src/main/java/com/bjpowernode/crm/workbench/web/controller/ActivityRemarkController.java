@@ -22,6 +22,7 @@ public class ActivityRemarkController {
     private ActivityRemarkService activityRemarkService;
     @RequestMapping("workbench/activity/saveCreateActivityRemark.do")
     public @ResponseBody Object saveCreateActivityRemark(ActivityRemark remark, HttpSession session){
+
         remark.setId(UUIDUtils.getUUID());
         remark.setCreateTime(DateUtils.formateDateTime(new Date()));
         User user = (User) session.getAttribute(Contants.SESSION_USER);
